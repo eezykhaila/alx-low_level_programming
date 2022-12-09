@@ -1,1 +1,1 @@
-0x00 hello world c
+variables and if else
