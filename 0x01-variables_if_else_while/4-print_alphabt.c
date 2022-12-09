@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - return single integer from 0-10
+ * main - returns alphabets both except e and q
  *
  * Return: Always 0 (Success)
  */
@@ -10,15 +10,16 @@
 int main(void)
 
 {
-	int num = 0;
+	char ch = 'a';
 
-	while (num < 10)
+	while (ch <= 'z')
 	{
-		printf("%d", num);
-		num++;
+		if ((ch != 'e') && (ch != 'q'))
+		{
+			putchar(ch);
+		}
+		ch++;
 	}
 	putchar('\n');
-
 	return (0);
-
 }
